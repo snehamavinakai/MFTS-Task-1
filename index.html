@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <!---Link ti icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-store"></i>
+        <h1>Boutique</h1>
+      </div>
+
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="div-text">
+        <span>outfit of the day</span>
+        <h3>all your</h3>
+        <h1>styles are here</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+          Corrupti facere repudiandae eligendi neque doloremque nesciunt id iusto voluptas <br> doloribus exercitationem.</p>
+          <a href="#" class="btn">buy now</a>
+      </div>
+
+      <div class="div-img">
+        <img id="big-img" src="assets/jacket1.png" alt="">
+      </div>
+      <div class="small-img">
+        <img onclick="myTshirt(this.src)" src="assets/jacket1.png" alt="">
+        <img onclick="myTshirt(this.src)" src="assets/jacket2.png" alt="">
+        <img onclick="myTshirt(this.src)" src="assets/jacket3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script>
+    let bigImage = document.getElementById('big-img');
+
+    function myTshirt(shirt){
+      bigImage.src=shirt
+    }
+  </script>
+</body>
+</html>
